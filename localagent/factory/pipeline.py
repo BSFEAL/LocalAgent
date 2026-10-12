@@ -180,7 +180,7 @@ class Factory:
                                                   self._tools(ws, read_only=True), rtraj)
             self._record(rtraj)
             self.bus.emit("review.done", risk=rep.review.risk, approve=rep.review.approve,
-                          blocking=len(rep.review.blocking))
+                          blocking=len(rep.review.blocking), reasons=rep.review.reasons)
             traj.metadata.update(review_risk=rep.review.risk, review_blocking=len(rep.review.blocking))
             self._record(traj)
             rep.trajectories.append(traj.id)

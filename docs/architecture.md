@@ -1,5 +1,7 @@
 # Architecture
 
+[← Documentation index](README.md)
+
 ## Diagram → code
 
 | Box in the factory diagram | Implementation |

@@ -119,8 +119,24 @@ MASS improves workflows and then learns from them. Each **cycle** has six steps:
 The factory feeds MASS automatically. Every built outcome becomes a coder task, and every stage's
 conversations are recorded as trajectories under `.localagent/`.
 
-See [docs/architecture.md](docs/architecture.md) for the module map, how the code maps to the
-diagram and to the paper, and where this implementation deviates from the paper.
+See [Self-improvement](docs/self-improvement.md) for the full walkthrough, and
+[Architecture](docs/architecture.md) for how the code maps to the diagram and the paper, and
+where this implementation deviates from the paper.
+
+## Documentation
+
+| Guide | |
+|---|---|
+| [Getting started](docs/getting-started.md) | install, offline demo, first outcome, deploys, first improvement cycle |
+| [Concepts](docs/concepts.md) | outcomes, stages, agents, workflows, tools, trajectories, events, state directory |
+| [Providers](docs/providers.md) | every provider, routing roles to models, adding a provider |
+| [Configuration](docs/configuration.md) | every `localagent.toml` option, with a complete example |
+| [CLI](docs/cli.md) | every command, flag, build status and exit code |
+| [The factory](docs/factory.md) | each stage in detail and how to tune it |
+| [Self-improvement](docs/self-improvement.md) | the paper slot, MASS step by step, data format, writing a strategy |
+| [Extending](docs/extending.md) | custom CI, approvers, deployers, flags, metrics, context, executors |
+| [Troubleshooting & FAQ](docs/troubleshooting.md) | common errors and questions |
+| [Architecture](docs/architecture.md) | diagram → code, paper → code, deviations |
 
 ## Layout
 
